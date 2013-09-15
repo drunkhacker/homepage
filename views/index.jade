@@ -1,0 +1,115 @@
+extends layout
+
+block content
+  .container(style="margin-top:10px;")
+    .row
+      .col-md-4.col-sm-6.col-lg-4.col-xs-12.card#name
+        .panel.panel-default
+          div(style="border-top-left-radius:4px; border-top-right-radius:4px;min-height:150px;background:url('/img/coffeebeans.jpg')")
+          .panel-body
+            .media
+              .media-object.pull-left
+                img.img-circle(src="/img/me.jpg", style="width:80px; height:80px;")
+              .media-body(style="margin-top:10px")
+                hgroup
+                  h4 Jaehwa Han
+                  h5 Coffee-holic programmer
+      .col-md-4.col-sm-6.col-lg-4.col-xs-12.card#languages
+        .panel.panel-default
+          .panel-body
+            h4 Languages
+            .row(style="margin-top:20px;margin-bottom:5px;")
+              .col-md-4.col-xs-4(style="border-right:1px solid #eee")
+                p.word 헬로!
+                p(style="line-height:100%") 
+                  b KOREAN <br/>
+                  small mother tongue
+              .col-md-4.col-xs-4(style="border-right:1px solid #eee")
+                p.word Hello
+                p(style="line-height:100%")
+                  b ENGLISH <br/>
+                  small second lang.
+              .col-md-4.col-xs-4.disable
+                p.word Привет
+                p(style="line-height:100%;")
+                  b RUSSIAN <br/>
+                  small want to learn
+      .col-md-4.col-sm-6.col-lg-4.col-xs-12.card#skills
+        .panel.panel-default
+          .panel-body
+            hgroup
+              h4 Skills
+              h5 to make goodies
+            .row
+              .col-md-3.col-xs-3(style="background:#acacac; border-bottom-left-radius:4px")
+                img.img-responsive(src="/img/apple.png")
+                p.text-center
+                  small iOS
+              .col-md-3.col-xs-3(style="background:#30587c")
+                img.img-responsive(src="/img/android.png")
+                p.text-center
+                  small Android
+              .col-md-3.col-xs-3(style="background:#fa6f57")
+                img.img-responsive(src="/img/rails.png")
+                p.text-center
+                  small RoR
+              .col-md-3.col-xs-3(style="background:#90d32d; border-bottom-right-radius:4px")
+                img.img-responsive(src="/img/play.png")
+                p.text-center
+                  small Play!
+
+    .row
+      .col-md-4.col-sm-6.col-lg-4.col-xs-12.col-xs-12.card#sns
+        .panel.panel-default
+          .panel-body
+            hgroup
+              h4 SNS
+              h5 keep connected
+            .row
+              .col-md-4.col-xs-4
+                a(href="https://twitter.com/drunkhacker", target="_blank")
+                  img.img-responsive(src="/img/twitter.png")
+                p.text-center 
+                  small @drunkhacker
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://drunkhacker.me" data-via="drunkhacker" data-lang="ko">트윗하기</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              .col-md-4.col-xs-4
+                a(href="https://facebook.com/jaehwa.han", target="_blank")
+                  img.img-responsive(src="/img/facebook.png")
+                p.text-center 
+                  small jaehwa.han
+                <div style="margin-left:20px" class="fb-like" data-href="http://drunkhacker.me" data-width="200" data-layout="box_count" data-show-faces="true" data-send="true"></div>
+              .col-md-4.col-xs-4
+                a(href="mailto:drh@snu.ac.kr")
+                  img.img-responsive(src="/img/mail.png")
+                p.text-center 
+                  small drh@snu.ac.kr
+      .col-md-4.col-sm-6.col-lg-4.col-xs-12.col-xs-12.card#sns
+        .panel.panel-default
+          .panel-body
+            hgroup
+              h4 Location
+              h5 where am I located
+            div(style="margin:0 -15px;min-height:150px; background:url('http://maps.googleapis.com/maps/api/staticmap?center=Seoul,Korea&zoom=14&size=600x400&sensor=false'); background-size:100%")
+            .media
+              .media-object.pull-left
+                img(src="/img/marker.png")
+              .media-body
+                hgroup
+                  h4(style="margin-top:0") Seoul
+                  h5 South Korea
+      .col-md-4.col-sm-6.col-lg-4.col-xs-12.col-xs-12.card#startup
+        .panel.panel-default
+          .panel-body
+            hgroup
+              h4 Entrepreneur
+              h5 Startup guy
+            .media
+              a.pull-left(href="http://easi6.com", target="_blank")
+                img.media-object.img-circle(src="/img/easi6_logo.png", style="width:80px; height:80px; background-color:#e44324")
+              .media-body(style="margin-top:5px;")
+                hgroup
+                  h4(style="margin-top:10px") easi6, Inc.
+                  h5 Lead Engineer 
+                    small since 2012. 7.
+
